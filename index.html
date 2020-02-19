@@ -33,7 +33,7 @@
         }
         .player-tab {
             display: block;
-            height: 350px;
+            height: 250px;
             overflow-y: auto;
         }
         .table td, .table th {
@@ -50,7 +50,7 @@
         #tree-count-text {
             margin-top: -35px;
         }
-        button[type=submit] {
+        button[type=submit], button[type=button] {
             font-weight: bold;
             text-transform: uppercase;
         }
@@ -96,13 +96,30 @@
     </header>
     <section class="container mb-5">
         <div class="row">
-            <div class="col-12">
-                <h2 class="alert bg-light text-primary text-center text-uppercase mt-5 mb-3">
-                    Team : <span>Green Avengers</span>
-                </h2>
-            </div>
             <div class="col-md-6 col-sm-12">
-                <h3 class="alert bg-primary text-white text-uppercase mt-3 mb-3">Team Photo</h3>
+                <h3 class="alert bg-primary text-white text-uppercase mt-5 mb-3">Team name</h3>
+                <form class="">
+                    <div class="form-group">
+                        <label for="teamname">Edit / Upadte team name</label>
+                        <input type="text" class="form-control" id="teamname" value="Green Avangers">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="cncevent">Select upcoming event to participate</label>
+                        <select class="form-control" id="cncevent">
+                          <option>Haleakala Carbon Neutrality Challenge</option>
+                          <option>Maunaloa Carbon Neutrality Challenge</option>
+                          <option>Kapalua Carbon Neutrality Challenge</option>
+                          <option>Kalaupapa Carbon Neutrality Challenge</option>
+                          <option>Mauna Kea Carbon Neutrality Challenge</option>
+                          <option>Kalaoa Carbon Neutrality Challenge</option>
+                          <option>Wahiawa Carbon Neutrality Challenge</option>
+                          <option>Honolulu Carbon Neutrality Challenge</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    </div> -->
+                </form>
+                <h3 class="alert bg-primary text-white text-uppercase mt-5 mb-3">Team Photo</h3>
                 <label for="exampleFormControlFile1">Take a photo of your team, the day of
                 the planting event and load it here</label>
                 <img id="blah"
@@ -113,35 +130,11 @@
                         <div class="col">
                             <input type='file' class="form-control-file" onchange="readURL(this);">   
                         </div>
-                        <div class="col">
-                            <button type="submit" class="btn btn-block btn-primary">Update</button>
-                        </div>
-                    </div>            
-                    <h3 class="alert bg-primary text-white text-uppercase mt-3 mb-3">Event Code</h3>
-                    <p class="text-justify">At the planting event, you should get codes from the 
-                    organizer that will indicate the total number of trees your team planted. All 
-                    trees planted are equally distributed among players that were confirmed to 
-                    participate in the event.</p>
-                    <div class="form-row">
-                        <div class="col">
-                            <p class="text-center text-success" id="tree-count">0</p>
-                            <p class="text-center text-success" id="tree-count-text">
-                                <small>Trees Planted</small>
-                            </p>
-                        </div>
-                        <div class="col">
-                            <label for="scorecode">Update event code</label>
-                            <input type="text" class="form-control" id="teamscore">
-                        </div>
-                        <div class="col">
-                            <label class="text-white">.</label>
-                            <button type="submit" class="btn btn-block btn-primary">Update</button>
-                        </div>
                     </div>
                 </form>
             </div>
             <div class="col-md-6 col-sm-12">
-                <h3 class="alert bg-primary text-white text-uppercase mt-3 mb-3">Manage Team Player</h3>
+                <h3 class="alert bg-primary text-white text-uppercase mt-5 mb-3">Manage Team Player</h3>
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
@@ -349,45 +342,6 @@
                                     <td><a href="#"><i class="fas fa-2x text-success fa-user-plus"></i></a></td>
                                     <td><a href="#"><i class="fas fa-2x text-dark fa-envelope"></i></a></td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#">
-                                            <img class="img-fluid" width="36" alt="Mark Otto"
-                                                src="https://truismfitness.com/wp-content/uploads/2019/04/jamie-profile-100x100.jpg"
-                                                alt="">
-                                        </a>
-                                    </td>
-                                    <td>Mark Otto</td>
-                                    <td><a href="#"><i class="fas fa-2x text-danger fa-user-times"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-2x text-success fa-user-plus"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-2x text-dark fa-envelope"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#">
-                                            <img class="img-fluid" width="36" alt="Jacob Thornton"
-                                                src="https://www.rushlane.com/wp-content/uploads/2019/03/sagar-rl-profile-100x100.jpg"
-                                                alt="">
-                                        </a>
-                                    </td>
-                                    <td>Jacob Thornton</td>
-                                    <td><a href="#"><i class="fas fa-2x text-danger fa-user-times"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-2x text-success fa-user-plus"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-2x text-dark fa-envelope"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#">
-                                            <img class="img-fluid" width="36" alt="Larry Bird"
-                                                src="https://fearfreehappyhomes.com/wp-content/uploads/2018/04/ramona-marek-profile-100x100.jpeg"
-                                                alt="">
-                                        </a>
-                                    </td>
-                                    <td>Larry Bird</td>
-                                    <td><a href="#"><i class="fas fa-2x text-danger fa-user-times"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-2x text-success fa-user-plus"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-2x text-dark fa-envelope"></i></a></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -476,16 +430,35 @@
                             </tbody>
                         </table>
                     </div>
+                </div>            
+                <h3 class="alert bg-primary text-white text-uppercase mt-5 mb-3">Event Code</h3>
+                <p class="text-justify">At the planting event, you should get codes from the 
+                organizer that will indicate the total number of trees your team planted. All 
+                trees planted are equally distributed among players that were confirmed to 
+                participate in the event.</p>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="scorecode">Update event code</label>
+                        <input type="text" class="form-control" id="teamscore">
+                    </div>
+                    <div class="col">
+                        <p class="text-center text-success" id="tree-count">0</p>
+                        <p class="text-center text-success" id="tree-count-text">
+                            <small>Trees Planted</small>
+                        </p>
+                    </div>
                 </div>
+            <!-- </div>
+            <div class="col-md-6 col-sm-12"> -->
             </div>
             <div class="col-12">
-                <h2 class="text-uppercase text-primary mt-5 mb-3">Create Team</h2>
-                <form class="">
-                    <div class="form-group">
-                        <label for="teamname">Input your team name</label>
-                        <input type="text" class="form-control" id="teamname">
-                    </div>
-                </form>
+                <div class="alert bg-light text-center">
+                    <button type="button" class="mx-2 btn btn-success">Save</button>
+                    <button type="button" class="mx-2 btn btn-info">Preview</button>
+                    <button type="button" class="mx-2 btn btn-primary">Publish</button>
+                    <button type="button" class="mx-2 btn btn-dark">Cancel</button>
+                    <button type="button" class="mx-2 btn btn-danger">Delete</button>
+                </div>
             </div>
         </div>
     </section>
