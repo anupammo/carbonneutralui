@@ -20,9 +20,7 @@
             background: linear-gradient(45deg, rgba(0, 0, 0, 1) 50%, rgba(0, 51, 170, 1) 50%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#0033aa", GradientType=1);
         }
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             font-weight: bolder;
         }
         h1 {
@@ -31,14 +29,14 @@
         }
         a.nav-link {
             text-transform: uppercase;
+            font-weight: bold;
         }
         .player-tab {
             display: block;
             height: 350px;
             overflow-y: auto;
         }
-        .table td,
-        .table th {
+        .table td, .table th {
             padding: .4rem;
         }
         td img {
@@ -95,13 +93,12 @@
     <section class="container mb-5">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center text-uppercase mt-5 mb-3">
-                    Team :
-                    <span class="text-uppercase text-primary">Green Avengers</span>
+                <h2 class="alert bg-light text-primary text-center text-uppercase mt-5 mb-3">
+                    Team : <span>Green Avengers</span>
                 </h2>
             </div>
             <div class="col-md-6 col-sm-12">
-                <h3 class="text-uppercase text-primary mt-5 mb-3">Team Photo</h3>
+                <h3 class="alert bg-primary text-white text-uppercase mt-3 mb-3">Team Photo</h3>
                 <label for="exampleFormControlFile1">Take a photo of your team, the day of
                 the planting event and load it here</label>
                 <img id="blah"
@@ -116,7 +113,7 @@
                             <button type="submit" class="btn btn-block btn-primary">Update</button>
                         </div>
                     </div>            
-                    <h3 class="text-uppercase text-primary mt-3 mb-3">Event Code</h3>
+                    <h3 class="alert bg-primary text-white mt-3 mb-3">Event Code</h3>
                     <p class="text-justify">At the planting event, you should get codes from the 
                     organizer that will indicate the total number of trees your team planted. All 
                     trees planted are equally distributed among players that were confirmed to 
@@ -140,7 +137,7 @@
                 </form>
             </div>
             <div class="col-md-6 col-sm-12">
-                <h3 class="text-uppercase text-primary mt-5 mb-3">Manage Team Player</h3>
+                <h3 class="alert bg-primary text-white text-uppercase mt-3 mb-3">Manage Team Player</h3>
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
